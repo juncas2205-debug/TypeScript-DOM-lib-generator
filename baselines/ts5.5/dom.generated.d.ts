@@ -5373,7 +5373,7 @@ declare var CSSCounterStyleRule: {
  */
 interface CSSFontFaceRule extends CSSRule {
     /**
-     * The read-only **`style`** property of the CSSFontFaceRule interface returns a CSSFontFaceDescriptors object representing the descriptors available in the @font-face rule's body.
+     * The read-only **`style`** property of the CSSFontFaceRule interface contains a CSSStyleDeclaration object representing the descriptors available in the @font-face rule's body.
      *
      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CSSFontFaceRule/style)
      */
@@ -7379,7 +7379,7 @@ interface CSSStyleProperties extends CSSStyleDeclarationBase {
      */
     columnWidth: string;
     /**
-     * The **`columns`** CSS shorthand property sets the maximum number of columns to use when drawing an element's contents, along with the minimum width and maximum height of the element's columns.
+     * The **`columns`** CSS shorthand property sets the number of columns to use when drawing an element's contents, as well as those columns' widths.
      *
      * [MDN Reference](https://developer.mozilla.org/docs/Web/CSS/Reference/Properties/columns)
      */
@@ -11277,7 +11277,7 @@ declare var CryptoKey: {
 };
 
 /**
- * The **`CustomElementRegistry`** interface provides methods for registering custom elements and querying registered elements. To get an instance of it, use the window.customElements property. To create a scoped registry, use the CustomElementRegistry() constructor.
+ * The **`CustomElementRegistry`** interface provides methods for registering custom elements and querying registered elements. To get an instance of it, use the window.customElements property.
  *
  * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CustomElementRegistry)
  */
@@ -11300,11 +11300,7 @@ interface CustomElementRegistry {
      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CustomElementRegistry/getName)
      */
     getName(constructor: CustomElementConstructor): string | null;
-    /**
-     * The **`initialize()`** method of the CustomElementRegistry interface associates this registry with a DOM subtree, setting the customElementRegistry of each inclusive descendant that doesn't already have one, and attempting to upgrade any custom elements found.
-     *
-     * [MDN Reference](https://developer.mozilla.org/docs/Web/API/CustomElementRegistry/initialize)
-     */
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/CustomElementRegistry/initialize) */
     initialize(root: Node): void;
     /**
      * The **`upgrade()`** method of the CustomElementRegistry interface upgrades all shadow-containing custom elements in a Node subtree, even before they are connected to the main document.
@@ -13613,11 +13609,7 @@ interface Element extends Node, ARIAMixin, Animatable, ChildNode, NonDocumentTyp
      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/currentCSSZoom)
      */
     readonly currentCSSZoom: number;
-    /**
-     * The **`customElementRegistry`** read-only property of the Element interface returns the CustomElementRegistry object associated with this element, or null if one has not been set.
-     *
-     * [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/customElementRegistry)
-     */
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/Element/customElementRegistry) */
     readonly customElementRegistry: CustomElementRegistry | null;
     /**
      * The **`id`** property of the Element interface represents the element's identifier, reflecting the id global attribute.
@@ -19566,7 +19558,7 @@ interface HTMLMediaElement extends HTMLElement {
      */
     canPlayType(type: string): CanPlayTypeResult;
     /**
-     * The **`captureStream()`** method of the HTMLMediaElement interface returns a MediaStream object that streams a real-time capture of the content being rendered in the media element.
+     * The **`captureStream()`** method of the HTMLMediaElement interface returns a MediaStream object which is streaming a real-time capture of the content being rendered in the media element.
      *
      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLMediaElement/captureStream)
      */
@@ -21305,11 +21297,7 @@ interface HTMLTemplateElement extends HTMLElement {
      * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTemplateElement/shadowRootClonable)
      */
     shadowRootClonable: boolean;
-    /**
-     * The **`shadowRootCustomElementRegistry`** property of the HTMLTemplateElement interface reflects the value of the shadowrootcustomelementregistry attribute of the associated <template> element.
-     *
-     * [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTemplateElement/shadowRootCustomElementRegistry)
-     */
+    /** [MDN Reference](https://developer.mozilla.org/docs/Web/API/HTMLTemplateElement/shadowRootCustomElementRegistry) */
     shadowRootCustomElementRegistry: string;
     /**
      * The **`shadowRootDelegatesFocus`** property of the HTMLTemplateElement interface reflects the value of the shadowrootdelegatesfocus attribute of the associated <template> element.
