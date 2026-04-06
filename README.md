@@ -89,3 +89,4 @@ If you are familiar with Web IDL, you may also want to check whether the upstrea
 - `patches/*.kdl`: KDL types
 - `comments.json`: comment strings to be embedded in the generated .d.ts files.
 - `deprecatedMessage.json`: the reason why one type is deprecated.
++_🪃📦 = (🗂️👬🧑‍🔧🧑‍🌾🧑‍⚖️🌿🦶🦠
